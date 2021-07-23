@@ -8,12 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pe.com.synopsis.client.soap.WsCountryClient;
 
 @SpringBootApplication
-public class RestApiApplication implements CommandLineRunner{
+public class RestApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiApplication.class, args);
 	}
-
+	/*
 	@Autowired
 	public WsCountryClient client;
 
@@ -23,4 +23,6 @@ public class RestApiApplication implements CommandLineRunner{
 		Country country = client.findByName(args[0]).getCountry();
 		System.out.println("Capital: " + country.getCapital());
 	}
+
+	 */
 }
